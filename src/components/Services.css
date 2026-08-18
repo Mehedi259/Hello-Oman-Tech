@@ -43,52 +43,63 @@
 .card-content {
   background: var(--bg-color);
   border-radius: calc(var(--radius-xl) - 1px);
-  padding: 3rem 2rem;
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.service-icon-wrapper {
+.service-image-container {
   position: relative;
-  display: inline-flex;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.service-mockup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.premium-service-card:hover .service-mockup-image {
+  transform: scale(1.05);
+}
+
+.service-icon-floating {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--bg-color);
+  border-radius: var(--radius-md);
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 72px;
-  height: 72px;
-  border-radius: var(--radius-lg);
-  margin-bottom: 2rem;
-  background: white;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
-}
-
-.service-icon {
-  width: 36px;
-  height: 36px;
+  box-shadow: var(--shadow-md);
   z-index: 2;
   transition: var(--transition);
 }
 
-.service-icon-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius-lg);
-  opacity: 0.1;
-  z-index: 1;
+.service-icon-floating svg {
+  width: 24px;
+  height: 24px;
   transition: var(--transition);
 }
 
-.premium-service-card:hover .service-icon-wrapper {
-  transform: scale(1.1);
-  box-shadow: var(--shadow-md);
+.premium-service-card:hover .service-icon-floating {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -5px var(--hover-color);
 }
 
-.premium-service-card:hover .service-icon-bg {
-  opacity: 0.2;
+.service-text-content {
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .service-title {
@@ -109,7 +120,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   color: var(--text-main);
   font-weight: 600;
   font-size: 1rem;
@@ -132,5 +143,8 @@
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
+  }
+  .service-image-container {
+    height: 180px;
   }
 }
