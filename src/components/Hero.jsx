@@ -60,7 +60,9 @@ const Hero = () => {
             <div className="card-float card-3">
               <div className="tech-icon-glow">{'< />'}</div>
             </div>
-            <div className="main-sphere"></div>
+            <div className="main-sphere">
+              <Globe2 size={100} color="rgba(255, 255, 255, 0.8)" className="sphere-icon" />
+            </div>
           </div>
         </div>
       </div>

@@ -168,6 +168,19 @@
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   box-shadow: inset -20px -20px 40px rgba(0,0,0,0.2), 0 20px 40px rgba(37, 99, 235, 0.3);
   animation: levitate 6s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sphere-icon {
+  animation: spinSlow 20s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .card-float {
