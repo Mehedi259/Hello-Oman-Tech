@@ -13,56 +13,56 @@ import './Services.css';
 
 const services = [
   {
-    title: 'Web Development',
-    description: 'Custom, responsive, and blazing fast websites tailored to your business needs.',
+    title: 'ওয়েব ডেভেলপমেন্ট',
+    description: 'আপনার ব্যবসার প্রয়োজনে কাস্টম, রেস্পন্সিভ এবং অত্যন্ত দ্রুতগতির ওয়েবসাইট তৈরি করি।',
     icon: <Code className="service-icon" />,
     color: '#3b82f6'
   },
   {
-    title: 'App Development',
-    description: 'High-performance mobile applications for iOS and Android platforms.',
+    title: 'অ্যাপ ডেভেলপমেন্ট',
+    description: 'আইওএস (iOS) এবং অ্যান্ড্রয়েড প্ল্যাটফর্মের জন্য উচ্চ-ক্ষমতাসম্পন্ন মোবাইল অ্যাপ্লিকেশন।',
     icon: <Smartphone className="service-icon" />,
     color: '#8b5cf6'
   },
   {
-    title: 'Desktop Software',
-    description: 'Robust and scalable desktop software solutions for enterprise productivity.',
+    title: 'ডেস্কটপ সফটওয়্যার',
+    description: 'এন্টারপ্রাইজ প্রোডাক্টিভিটি বাড়ানোর জন্য শক্তিশালী ও স্কেলেবল ডেস্কটপ সফটওয়্যার সল্যুশন।',
     icon: <Monitor className="service-icon" />,
     color: '#10b981'
   },
   {
-    title: 'Video Editing',
-    description: 'Professional video editing and post-production to tell your story perfectly.',
+    title: 'ভিডিও এডিটিং',
+    description: 'আপনার গল্প নিখুঁতভাবে তুলে ধরতে পেশাদার ভিডিও এডিটিং ও পোস্ট-প্রোডাকশন সেবা।',
     icon: <Film className="service-icon" />,
     color: '#f43f5e'
   },
   {
-    title: 'Digital Marketing',
-    description: 'Data-driven marketing strategies to accelerate your online growth.',
+    title: 'ডিজিটাল মার্কেটিং',
+    description: 'আপনার অনলাইন প্রবৃদ্ধি ত্বরান্বিত করতে ডেটা-নির্ভর মার্কেটিং স্ট্র্যাটেজি।',
     icon: <TrendingUp className="service-icon" />,
     color: '#f59e0b'
   },
   {
-    title: 'Artificial Intelligence',
-    description: 'Next-gen AI solutions to automate and optimize your business processes.',
+    title: 'আর্টিফিশিয়াল ইন্টেলিজেন্স',
+    description: 'আপনার ব্যবসায়িক প্রক্রিয়া স্বয়ংক্রিয় ও অপ্টিমাইজ করতে নেক্সট-জেন এআই (AI) সল্যুশন।',
     icon: <BrainCircuit className="service-icon" />,
     color: '#06b6d4'
   },
   {
-    title: 'Graphics Design',
-    description: 'Stunning visual identities, branding, and UI/UX design services.',
+    title: 'গ্রাফিক্স ডিজাইন',
+    description: 'আকর্ষণীয় ভিজ্যুয়াল আইডেন্টিটি, ব্র্যান্ডিং এবং ইউআই/ইউএক্স (UI/UX) ডিজাইন সেবা।',
     icon: <PenTool className="service-icon" />,
     color: '#ec4899'
   },
   {
-    title: 'Cyber Security',
-    description: 'Top-tier security assessments and protection for your digital assets.',
+    title: 'সাইবার সিকিউরিটি',
+    description: 'আপনার ডিজিটাল সম্পদের সর্বোচ্চ নিরাপত্তা ও ঝুঁকি মূল্যায়নের নির্ভরযোগ্য সেবা।',
     icon: <ShieldCheck className="service-icon" />,
     color: '#14b8a6'
   },
   {
-    title: 'Social Media Marketing',
-    description: 'Engaging social campaigns that build brand awareness and loyalty.',
+    title: 'সোশ্যাল মিডিয়া মার্কেটিং',
+    description: 'ব্র্যান্ড সচেতনতা ও বিশ্বস্ততা তৈরি করতে কার্যকরী সোশ্যাল মিডিয়া ক্যাম্পেইন।',
     icon: <Share2 className="service-icon" />,
     color: '#6366f1'
   }
@@ -70,26 +70,33 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="section bg-secondary">
+    <section id="services" className="section bg-tertiary">
       <div className="container">
-        <h2 className="section-title">Our Premium Services</h2>
+        <h2 className="section-title">আমাদের সেবাসমূহ</h2>
         <p className="section-subtitle">
-          We provide a comprehensive suite of digital solutions to empower your brand and drive results in the modern tech landscape.
+          আধুনিক প্রযুক্তি বিশ্বে আপনার ব্র্যান্ডকে শক্তিশালী করতে এবং সঠিক ফলাফল নিয়ে আসতে আমরা একটি পূর্ণাঙ্গ ডিজিটাল সল্যুশন প্রদান করি।
         </p>
 
         <div className="services-grid">
           {services.map((service, index) => (
             <div 
-              className="glass-card service-card" 
+              className="premium-service-card" 
               key={index}
               style={{ '--hover-color': service.color }}
             >
-              <div className="service-icon-wrapper" style={{ color: service.color }}>
-                {service.icon}
-                <div className="service-icon-bg" style={{ backgroundColor: service.color }}></div>
+              <div className="card-border-glow"></div>
+              <div className="card-content">
+                <div className="service-icon-wrapper" style={{ color: service.color }}>
+                  {service.icon}
+                  <div className="service-icon-bg" style={{ backgroundColor: service.color }}></div>
+                </div>
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-description">{service.description}</p>
+                <div className="service-link">
+                  <span>বিস্তারিত</span>
+                  <div className="arrow">→</div>
+                </div>
               </div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
             </div>
           ))}
         </div>

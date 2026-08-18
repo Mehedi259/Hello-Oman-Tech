@@ -1,13 +1,13 @@
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Award, Users, Zap } from 'lucide-react';
 import './WhyUs.css';
 
 const features = [
-  "100% Original Value Supply",
-  "Premium Quality Deliverables",
-  "Mobile Responsive Designs",
-  "Dedicated Support Team",
-  "Transparent Communication",
-  "Cutting-Edge Technology"
+  "১০০% অরজিনাল ভ্যালু সাপ্লাই",
+  "প্রিমিয়াম কোয়ালিটি ডেলিভারি",
+  "মোবাইল রেস্পন্সিভ ডিজাইন",
+  "ডেডিকেটেড সাপোর্ট টিম",
+  "স্বচ্ছ যোগাযোগ ব্যবস্থা",
+  "অত্যাধুনিক প্রযুক্তির ব্যবহার"
 ];
 
 const WhyUs = () => {
@@ -15,9 +15,9 @@ const WhyUs = () => {
     <section id="why-us" className="section why-us-section">
       <div className="container why-us-container">
         <div className="why-us-content">
-          <h2 className="section-title text-left">Why Choose Hello Oman Tech?</h2>
+          <h2 className="section-title text-left">কেন হ্যালো ওমান টেক?</h2>
           <p className="why-us-subtitle">
-            We are committed to delivering genuine value and building trust. Our approach focuses on providing authentic, high-quality tech solutions that drive real results for your business.
+            আমরা সত্যিকারের ভ্যালু প্রদান এবং বিশ্বাসযোগ্যতা অর্জনে প্রতিশ্রুতিবদ্ধ। আমাদের লক্ষ্য হলো আপনাকে এমন নির্ভরযোগ্য প্রযুক্তিগত সমাধান দেওয়া, যা আপনার ব্যবসায়িক সাফল্য নিশ্চিত করে।
           </p>
           
           <ul className="feature-list">
@@ -31,19 +31,25 @@ const WhyUs = () => {
           
           <div className="stats-container">
             <div className="stat-box">
-              <h4 className="stat-number">100%</h4>
-              <p className="stat-label">Client Satisfaction</p>
+              <Award className="stat-icon" />
+              <h4 className="stat-number">১০০%</h4>
+              <p className="stat-label">ক্লায়েন্ট সন্তুষ্টি</p>
             </div>
             <div className="stat-box">
-              <h4 className="stat-number">24/7</h4>
-              <p className="stat-label">Premium Support</p>
+              <Users className="stat-icon" />
+              <h4 className="stat-number">৫০+</h4>
+              <p className="stat-label">দক্ষ পেশাদার</p>
+            </div>
+            <div className="stat-box">
+              <Zap className="stat-icon" />
+              <h4 className="stat-number">২৪/৭</h4>
+              <p className="stat-label">প্রিমিয়াম সাপোর্ট</p>
             </div>
           </div>
         </div>
         
         <div className="why-us-visual">
           <div className="image-wrapper">
-            {/* Using a pure CSS abstract shape instead of image to maintain a fast, modern feel without needing external assets */}
             <div className="abstract-shape">
               <div className="circle circle-1"></div>
               <div className="circle circle-2"></div>

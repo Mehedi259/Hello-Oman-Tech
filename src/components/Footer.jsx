@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="footer-brand">
             <a href="#home" className="logo footer-logo">
               <Cpu className="logo-icon" />
-              <span>Hello Oman Tech</span>
+              <span>হ্যালো ওমান টেক</span>
             </a>
             <p className="footer-description">
-              Elevating businesses through innovative technology, stunning design, and strategic digital marketing in Oman and beyond.
+              উদ্ভাবনী প্রযুক্তি, দৃষ্টিনন্দন ডিজাইন এবং কৌশলগত ডিজিটাল মার্কেটিংয়ের মাধ্যমে ওমান এবং বিশ্বজুড়ে ব্যবসায়ের মানোন্নয়ন।
             </p>
             <div className="social-links">
               <a href="#" className="social-link"><MessageSquare size={20} /></a>
@@ -25,37 +25,37 @@ const Footer = () => {
           </div>
 
           <div className="footer-links">
-            <h4 className="footer-heading">Services</h4>
+            <h4 className="footer-heading">সেবাসমূহ</h4>
             <ul>
-              <li><a href="#services">Web Development</a></li>
-              <li><a href="#services">App Development</a></li>
-              <li><a href="#services">Digital Marketing</a></li>
-              <li><a href="#services">AI Technology</a></li>
-              <li><a href="#services">Cyber Security</a></li>
+              <li><a href="#services">ওয়েব ডেভেলপমেন্ট</a></li>
+              <li><a href="#services">অ্যাপ ডেভেলপমেন্ট</a></li>
+              <li><a href="#services">ডিজিটাল মার্কেটিং</a></li>
+              <li><a href="#services">আর্টিফিশিয়াল ইন্টেলিজেন্স</a></li>
+              <li><a href="#services">সাইবার সিকিউরিটি</a></li>
             </ul>
           </div>
 
           <div className="footer-links">
-            <h4 className="footer-heading">Company</h4>
+            <h4 className="footer-heading">কোম্পানি</h4>
             <ul>
-              <li><a href="#home">About Us</a></li>
-              <li><a href="#why-us">Why Choose Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#home">আমাদের সম্পর্কে</a></li>
+              <li><a href="#process">কাজের ধারা</a></li>
+              <li><a href="#why-us">কেন আমাদের বেছে নিবেন</a></li>
+              <li><a href="#">গোপনীয়তা নীতি</a></li>
+              <li><a href="#">শর্তাবলী</a></li>
             </ul>
           </div>
 
           <div className="footer-contact">
-            <h4 className="footer-heading">Contact Us</h4>
+            <h4 className="footer-heading">যোগাযোগ</h4>
             <ul className="contact-list">
               <li>
                 <MapPin className="contact-icon" />
-                <span>Muscat, Sultanate of Oman</span>
+                <span>মাস্কাট, সুলতানাত অফ ওমান</span>
               </li>
               <li>
                 <Phone className="contact-icon" />
-                <span>+968 1234 5678</span>
+                <span>+৯৬৮ ১২৩৪ ৫৬৭৮</span>
               </li>
               <li>
                 <Mail className="contact-icon" />
@@ -63,17 +63,17 @@ const Footer = () => {
               </li>
             </ul>
             <div className="newsletter">
-              <h5 className="newsletter-title">Subscribe to our newsletter</h5>
+              <h5 className="newsletter-title">নিউজলেটার সাবস্ক্রাইব করুন</h5>
               <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-                <input type="email" placeholder="Email Address" required className="newsletter-input" />
-                <button type="submit" className="btn btn-primary newsletter-btn">Subscribe</button>
+                <input type="email" placeholder="ইমেইল অ্যাড্রেস" required className="newsletter-input" />
+                <button type="submit" className="btn btn-primary newsletter-btn">সাবস্ক্রাইব</button>
               </form>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Hello Oman Tech. All rights reserved.</p>
+          <p>&copy; {currentYear} হ্যালো ওমান টেক। সর্বস্বত্ব সংরক্ষিত।</p>
         </div>
       </div>
     </footer>

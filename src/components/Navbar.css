@@ -1,20 +1,54 @@
-.navbar {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1.5rem 0;
+  transition: var(--transition);
+}
+
+.top-bar {
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 1.5rem;
+  opacity: 0.9;
+}
+
+.navbar {
+  padding: 1.25rem 0;
   transition: var(--transition);
   background: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.header:has(.navbar.scrolled) .top-bar {
+  transform: translateY(-100%);
+  position: absolute;
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   padding: 1rem 0;
   box-shadow: var(--shadow-sm);
-  border-bottom: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--border-light);
+  transform: translateY(-100%);
+  top: 100%;
 }
 
 .nav-container {
@@ -27,16 +61,16 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Noto Sans Bengali', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-  color: var(--text-main);
+  color: var(--primary);
 }
 
 .logo-icon {
-  color: var(--primary);
-  width: 28px;
-  height: 28px;
+  color: var(--secondary);
+  width: 32px;
+  height: 32px;
 }
 
 .nav-links {
@@ -46,10 +80,11 @@
 }
 
 .nav-link {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-main);
   transition: var(--transition);
   position: relative;
+  font-size: 1.05rem;
 }
 
 .nav-link::after {
@@ -59,12 +94,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary);
+  background: var(--secondary);
   transition: var(--transition);
 }
 
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .nav-link:hover::after {
@@ -80,8 +115,8 @@
 }
 
 .mobile-menu {
-  position: fixed;
-  top: 70px;
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
   background: var(--bg-color);
@@ -92,17 +127,23 @@
   box-shadow: var(--shadow-md);
   transform: translateY(-150%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 999;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .mobile-menu.open {
   transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
 }
 
 .mobile-nav-link {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-main);
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 0.5rem;
 }
 
 .mobile-nav-btn {
@@ -110,11 +151,14 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .desktop-only {
     display: none;
   }
   .mobile-only {
     display: block;
+  }
+  .navbar {
+    background: var(--bg-color);
   }
 }
