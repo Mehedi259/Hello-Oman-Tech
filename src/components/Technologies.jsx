@@ -8,9 +8,9 @@ const Technologies = () => {
   return (
     <section id="technologies" className="section tech-section">
       <div className="container">
-        <h2 className="section-title">আমাদের ব্যবহৃত টেকনোলজি</h2>
+        <h2 className="section-title">Technologies We Use</h2>
         <p className="section-subtitle">
-          বিশ্বমানের সল্যুশন তৈরি করতে আমরা অত্যাধুনিক ও স্কেলেবল টেকনোলজি স্ট্যাক ব্যবহার করি।
+          We leverage a cutting-edge and scalable technology stack to build world-class digital solutions.
         </p>
 
         <div className="marquee-container">

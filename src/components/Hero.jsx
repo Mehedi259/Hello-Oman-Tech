@@ -15,33 +15,33 @@ const Hero = () => {
         <div className="hero-content">
           <div className="badge">
             <Globe2 className="badge-icon" />
-            <span>ওমানের শীর্ষস্থানীয় টেক প্রতিষ্ঠান</span>
+            <span>Oman's Leading Tech Agency</span>
           </div>
           
           <h1 className="hero-title">
-            আপনার আইডিয়ার <span className="highlight">প্রযুক্তিগত রূপায়ন</span>
+            Transforming Your Ideas Into <span className="highlight">Digital Reality</span>
           </h1>
           
           <p className="hero-subtitle">
-            হ্যালো ওমান টেক আপনার ব্যবসাকে পরবর্তী স্তরে নিয়ে যেতে বিশ্বমানের সফটওয়্যার, ওয়েব ও অ্যাপ ডেভেলপমেন্ট এবং ডিজিটাল মার্কেটিং সমাধান প্রদান করে।
+            Hello Oman Tech provides world-class software, web and app development, and digital marketing solutions to take your business to the next level.
           </p>
           
           <div className="hero-actions">
             <a href="#services" className="btn btn-primary btn-lg">
-              আমাদের সেবাসমূহ <ArrowRight size={20} />
+              Our Services <ArrowRight size={20} />
             </a>
             <a href="#contact" className="btn btn-outline btn-lg">
-              পরামর্শ নিন
+              Get Free Consultation
             </a>
           </div>
           
           <div className="hero-stats">
             <div className="stat-item">
-              <strong>৫০+</strong> প্রজেক্ট সম্পন্ন
+              <strong>50+</strong> Projects Completed
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
-              <strong>১০০%</strong> ক্লায়েন্ট সন্তুষ্টি
+              <strong>100%</strong> Client Satisfaction
             </div>
           </div>
         </div>

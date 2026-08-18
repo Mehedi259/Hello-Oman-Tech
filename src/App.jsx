@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Technologies from './components/Technologies';
 import Services from './components/Services';
 import WorkProcess from './components/WorkProcess';
+import Team from './components/Team';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
         <Technologies />
         <Services />
         <WorkProcess />
+        <Team />
         <WhyUs />
       </main>
       <Footer />

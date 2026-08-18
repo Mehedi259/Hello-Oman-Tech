@@ -15,11 +15,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'হোম', href: '#home' },
-    { name: 'সেবাসমূহ', href: '#services' },
-    { name: 'প্রযুক্তি', href: '#technologies' },
-    { name: 'কাজের ধারা', href: '#process' },
-    { name: 'কেন আমরা', href: '#why-us' }
+    { name: 'Home', href: '#home' },
+    { name: 'Services', href: '#services' },
+    { name: 'Technologies', href: '#technologies' },
+    { name: 'Process', href: '#process' },
+    { name: 'Why Us', href: '#why-us' }
   ];
 
   return (
@@ -28,11 +28,11 @@ const Navbar = () => {
       <div className="top-bar desktop-only">
         <div className="container top-bar-container">
           <div className="top-bar-left">
-            <span className="top-bar-item"><Phone size={14} /> +৯৬৮ ১২৩৪ ৫৬৭৮</span>
+            <span className="top-bar-item"><Phone size={14} /> +968 1234 5678</span>
             <span className="top-bar-item"><Mail size={14} /> info@helloomantech.com</span>
           </div>
           <div className="top-bar-right">
-            <span className="top-bar-item">ভাষা: <strong>বাংলা</strong></span>
+            <span className="top-bar-item">Language: <strong>English</strong></span>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="container nav-container">
           <a href="#home" className="logo">
             <Cpu className="logo-icon" />
-            <span>হ্যালো ওমান টেক</span>
+            <span>Hello Oman Tech</span>
           </a>
 
           <div className="nav-links desktop-only">
@@ -50,7 +50,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <a href="#contact" className="btn btn-primary nav-btn">যোগাযোগ করুন</a>
+            <a href="#contact" className="btn btn-primary nav-btn">Contact Us</a>
           </div>
 
           <button 
@@ -78,7 +78,7 @@ const Navbar = () => {
             className="btn btn-primary mobile-nav-btn"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            যোগাযোগ করুন
+            Contact Us
           </a>
         </div>
       </nav>

@@ -2,12 +2,12 @@ import { CheckCircle2, Award, Users, Zap } from 'lucide-react';
 import './WhyUs.css';
 
 const features = [
-  "১০০% অরজিনাল ভ্যালু সাপ্লাই",
-  "প্রিমিয়াম কোয়ালিটি ডেলিভারি",
-  "মোবাইল রেস্পন্সিভ ডিজাইন",
-  "ডেডিকেটেড সাপোর্ট টিম",
-  "স্বচ্ছ যোগাযোগ ব্যবস্থা",
-  "অত্যাধুনিক প্রযুক্তির ব্যবহার"
+  "100% Original Value Delivery",
+  "Premium Quality Solutions",
+  "Mobile Responsive Design",
+  "Dedicated Support Team",
+  "Transparent Communication",
+  "Cutting-edge Technology"
 ];
 
 const WhyUs = () => {
@@ -15,9 +15,9 @@ const WhyUs = () => {
     <section id="why-us" className="section why-us-section">
       <div className="container why-us-container">
         <div className="why-us-content">
-          <h2 className="section-title text-left">কেন হ্যালো ওমান টেক?</h2>
+          <h2 className="section-title text-left">Why Choose Hello Oman Tech?</h2>
           <p className="why-us-subtitle">
-            আমরা সত্যিকারের ভ্যালু প্রদান এবং বিশ্বাসযোগ্যতা অর্জনে প্রতিশ্রুতিবদ্ধ। আমাদের লক্ষ্য হলো আপনাকে এমন নির্ভরযোগ্য প্রযুক্তিগত সমাধান দেওয়া, যা আপনার ব্যবসায়িক সাফল্য নিশ্চিত করে।
+            We are committed to delivering genuine value and building long-lasting trust. Our goal is to provide you with reliable technological solutions that guarantee your business success.
           </p>
           
           <ul className="feature-list">
@@ -32,18 +32,18 @@ const WhyUs = () => {
           <div className="stats-container">
             <div className="stat-box">
               <Award className="stat-icon" />
-              <h4 className="stat-number">১০০%</h4>
-              <p className="stat-label">ক্লায়েন্ট সন্তুষ্টি</p>
+              <h4 className="stat-number">100%</h4>
+              <p className="stat-label">Client Satisfaction</p>
             </div>
             <div className="stat-box">
               <Users className="stat-icon" />
-              <h4 className="stat-number">৫০+</h4>
-              <p className="stat-label">দক্ষ পেশাদার</p>
+              <h4 className="stat-number">50+</h4>
+              <p className="stat-label">Expert Professionals</p>
             </div>
             <div className="stat-box">
               <Zap className="stat-icon" />
-              <h4 className="stat-number">২৪/৭</h4>
-              <p className="stat-label">প্রিমিয়াম সাপোর্ট</p>
+              <h4 className="stat-number">24/7</h4>
+              <p className="stat-label">Premium Support</p>
             </div>
           </div>
         </div>

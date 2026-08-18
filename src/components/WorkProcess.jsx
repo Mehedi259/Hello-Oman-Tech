@@ -4,23 +4,23 @@ import './WorkProcess.css';
 const steps = [
   {
     icon: <Lightbulb />,
-    title: '১. পরিকল্পনা',
-    description: 'আপনার প্রয়োজনীয়তা বিশ্লেষণ করে একটি নিশ্ছিদ্র প্রজেক্ট প্ল্যান তৈরি করা হয়।'
+    title: '1. Planning',
+    description: 'We analyze your requirements and create a flawless project plan to ensure success.'
   },
   {
     icon: <PenTool />,
-    title: '২. ডিজাইন',
-    description: 'ইউজার এক্সপেরিয়েন্সকে প্রাধান্য দিয়ে আধুনিক ও আকর্ষণীয় ইউআই (UI) তৈরি করা হয়।'
+    title: '2. Design',
+    description: 'Focusing on user experience, we craft modern and highly engaging UI designs.'
   },
   {
     icon: <Code2 />,
-    title: '৩. ডেভেলপমেন্ট',
-    description: '최신 (সর্বশেষ) প্রযুক্তি ব্যবহার করে অত্যন্ত নিরাপদ এবং স্কেলেবল সিস্টেম ডেভেলপ করা হয়।'
+    title: '3. Development',
+    description: 'We build highly secure and scalable systems using the latest technologies.'
   },
   {
     icon: <Rocket />,
-    title: '৪. ডেলিভারি',
-    description: 'যথাযথ টেস্টিং শেষে সময়মতো প্রজেক্ট লাইভ করা হয় এবং সহায়তা প্রদান করা হয়।'
+    title: '4. Delivery',
+    description: 'After rigorous testing, we launch the project on time and provide ongoing support.'
   }
 ];
 
@@ -28,9 +28,9 @@ const WorkProcess = () => {
   return (
     <section id="process" className="section process-section">
       <div className="container">
-        <h2 className="section-title">আমাদের কাজের ধারা</h2>
+        <h2 className="section-title">Our Work Process</h2>
         <p className="section-subtitle">
-          একটি সুন্দর আইডিয়াক বাস্তব রূপ দিতে আমরা অত্যন্ত গোছানো ও পেশাদার একটি পদ্ধতি অনুসরণ করি।
+          We follow a highly organized and professional approach to turn a great idea into reality.
         </p>
 
         <div className="process-timeline">
