@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: 'Md. Shafiq Ahmed',
     designation: 'Video Editor',
-    image: '/Video editor  Md, Shofiq Ahmed.jpeg'
+    image: '/Video editor  Md, Shofiq Ahmed.png'
   },
   {
     name: 'Abdullah Al Jobayer',
