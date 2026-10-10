@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: hello-oman-tech
+    restart: always
+    ports:
+      - "3012:80"
