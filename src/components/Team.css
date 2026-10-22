@@ -123,3 +123,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+.social-btn.whatsapp-btn {
+  background: #25d366;
+}
+.social-btn.whatsapp-btn:hover {
+  background: #128c7e;
+  color: white;
+}
+.social-btn svg {
+  display: block;
+  fill: currentColor;
+}

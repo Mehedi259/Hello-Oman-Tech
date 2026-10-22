@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li>
                 <Phone className="contact-icon" />
-                <span>+968 1234 5678</span>
+                <a href="https://wa.me/96894578538" target="_blank" rel="noopener noreferrer">+968 9457 8538 (WhatsApp)</a>
               </li>
               <li>
                 <Mail className="contact-icon" />

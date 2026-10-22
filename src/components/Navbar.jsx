@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="top-bar desktop-only">
         <div className="container top-bar-container">
           <div className="top-bar-left">
-            <span className="top-bar-item"><Phone size={14} /> +968 1234 5678</span>
+            <a href="https://wa.me/96894578538" target="_blank" rel="noopener noreferrer" className="top-bar-item"><Phone size={14} /> +968 9457 8538</a>
             <span className="top-bar-item"><Mail size={14} /> info@helloomantech.com</span>
           </div>
           <div className="top-bar-right">
